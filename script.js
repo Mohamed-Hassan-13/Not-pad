@@ -101,8 +101,7 @@ if(textarea.value){
         tit:title.value,
         name:textarea.value,
         color:cc ,
-        img:image_right.getAttribute("src"),
-        video:""
+        img:image_right.getAttribute("src")
     }
    
     
@@ -182,6 +181,7 @@ check.style.display="block"
 function edit(i){
     title.value=i.tit
     textarea.value=i.name
+    image_right.src=i.img
     right.style.height="400px"
     close.style.marginRight="0"
 color.value=i.color
