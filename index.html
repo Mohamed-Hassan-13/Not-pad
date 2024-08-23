@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="con">
+      <h1 id="not">Notepad</h1>
+      <div class="right">
+        <div class="top">
+          <input type="text" id="title" placeholder="TiTle" />
+          <ion-icon name="close-outline" id="close"></ion-icon>
+        </div>
+        <img id="image_right" />
+        <textarea name="" id="textarea" placeholder="Write Here"></textarea>
+        <div class="color">
+          <div id="red" onclick="change(this.id)" class="red"></div>
+          <div id="yellow" onclick="change(this.id)" class="yellow"></div>
+          <div id="black" onclick="change(this.id)" class="black"></div>
+          <div id="blue" onclick="change(this.id)" class="blue"></div>
+          <div id="gray" onclick="change(this.id)" class="gray"></div>
+          <div id="pink" onclick="change(this.id)" class="pink"></div>
+        </div>
+        <div class="bottom">
+          <!-- <input type="color" id="color" /> -->
+          <ion-icon
+            class="draw"
+            onclick="changecolor()"
+            name="brush-outline"
+          ></ion-icon>
+          <input type="file" id="file" />
+          <label for="file"><ion-icon name="image-outline"></ion-icon></label>
+          <button onclick="fun()">Save</button>
+        </div>
+      </div>
+      <ion-icon id="sun" name="sunny-outline"></ion-icon>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    transition: all .6s;
+}
+
+.con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color: rgba(128, 128, 128, 0.475);
+padding: 20px 5% 20px 100px;
+    h1{
+        transition: all .6s;
+
+    }
+
+.right{
+    width: 25%;
+    min-width: 300px;
+display: flex;
+flex-direction: column;
+position: fixed;
+gap: 10px;
+top: 15px;
+right: 30%;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+height: 50px;
+overflow: hidden;
+transition: all .5s;
+z-index: 333;
+
+
+#image_right{
+    height: 150px;
+    display: none;
+}
+
+.top{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 0px;
+
+    #title{
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 0 5px;
+        color: black;
+
+    }
+    #title::placeholder{
+        letter-spacing: 2px;
+    }
+    ion-icon{
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: -35px;
+transition: all .5s;
+
+    }
+
+
+
+}
+#title:focus , #textarea:focus{
+    outline: 0;
+}
+
+#textarea{
+    height: 300px;
+    border: 0;
+color: black;
+    padding: 5px;
+    resize: none;
+    background-color: transparent;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #color{
+width: 50px;        
+    }
+
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+transition: all .4s;
+background-color: transparent;
+font-weight: bold;
+}
+}
+#file{
+    display: none;
+}
+label{
+    ion-icon{
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+transition: all .4s;
+
+    }
+}
+
+label ion-icon:hover , .bottom button:hover , .bottom .draw:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.667);
+    background-color:rgba(128, 128, 128, 0.32) ;
+}
+}
+
+#sun{
+    font-size: 30px;
+    cursor: pointer;
+    transition: all .6s;
+
+}
+
+}
+@media screen and (max-width:550px) {
+    .con h1{
+opacity: 0;
+ }
+}
+
+@media screen and (max-width:490px){
+.con .right{
+    right: 16%;
+    min-width: 248px;
+
+}
+}
+
+.div{
+width: 100%;
+height: 87vh;
+padding:70px 30px;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+.div .note{
+    background-color: black;
+    width: 270px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+align-items: start;
+gap: 10px;
+position: relative;
+border-radius: 10px;
+color: white;
+padding: 10px;
+box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.575);
+
+
+    .del{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    border-bottom: 2px solid white;
+
+    
+
+        ion-icon{
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    p{
+        width: 100%;
+    }
+    .img_note{
+        width: 100%;
+        height: 100px;
+        display: none;
+    }
+}
+.right .bottom .draw{
+    font-size: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 5px;
+transition: all .4s;
+}
+
+.color{
+display: flex;
+align-items: center;
+justify-content: space-around;
+gap: 5px;
+width: 0;
+height: 30px;
+background-color:rgba(128, 128, 128, 0.32);
+border-radius: 20px;
+transition: all .6s;
+    .red{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ff2424;
+        cursor: pointer;
+    }
+    .yellow{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: yellow;
+        cursor: pointer;
+    }
+    .black{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #cf07f7;
+        cursor: pointer;
+    }
+    .blue{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: blue;
+        cursor: pointer;
+    } 
+    .gray{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #4797c2;
+        cursor: pointer;
+    } 
+    .pink{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: pink;
+        cursor: pointer;
+    } 
+    
+    
+    
+    
+    
+    
+    
+     }
+   
+
+
