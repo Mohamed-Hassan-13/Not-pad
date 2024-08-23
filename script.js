@@ -182,6 +182,7 @@ function edit(i){
     title.value=i.tit
     textarea.value=i.name
     image_right.src=i.img
+    image_right.style.display="block"
     right.style.height="400px"
     close.style.marginRight="0"
 color.value=i.color
